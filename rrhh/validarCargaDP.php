@@ -1,5 +1,5 @@
 <?php
-    include("conection.php");
+    include("../conection.php");
     if ($_GET) {
         $nombre = $_GET["nombre"];
         $dni = $_GET["dni"];

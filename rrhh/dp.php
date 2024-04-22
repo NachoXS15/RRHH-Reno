@@ -1,5 +1,5 @@
 <?php
-    include("conection.php");
+    include("../conection.php");
     $sql = "SELECT * FROM rrhh_dp";
     $result = mysqli_query($connect, $sql);
 ?>
@@ -35,6 +35,7 @@
                 <td><?php echo $row['domicilio'] ?></td>
                 <td><?php $hijos = $row['hijos'] ? $row['hijos'] : "No tiene";  echo $hijos?></td>
                 <td><?php echo $row['observaciones'] ?></td>
+                <td><a href="dl.php?id=<?php echo $row['id'] ?>">Dat. Laborales</a></td>
                 <td><button>Editar</button></td>
                 <td><button>Eliminar</button></td>
             </tr>

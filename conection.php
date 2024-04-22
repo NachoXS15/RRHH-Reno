@@ -4,7 +4,7 @@
     $pass = getenv("DB_PASS");
     $db = getenv("DB_NAME");
     try {
-        $connect = new mysqli("localhost", "root", "renovacion231", "renovacion");
+        $connect = new mysqli("localhost", "root", "", "renovacion_db");
         echo "Conexión exitosa";
     } catch (\Throwable $th) {
         echo "Error al conectar: ". $th->getMessage();
